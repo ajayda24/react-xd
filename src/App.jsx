@@ -174,7 +174,7 @@ function App() {
       </div>
       <div className=' bg-white p-4 md:px-16 flex flex-wrap gap-3 justify-center md:justify-between'>
         <p>@2021 Kivlik. All rights reserved.</p>
-        <p>Pribacy | Terms | Security | Sitemap</p>
+        <p>Privacy | Terms | Security | Sitemap</p>
       </div>
     </div>
   )
