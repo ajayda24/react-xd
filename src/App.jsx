@@ -10,6 +10,7 @@ import { useState } from 'react'
 
 function App() {
   const [isNavOpen, setNavOpen] = useState(false)
+  const [hideChair, setHideChair] = useState(false)
 
   return (
     <div className='relative'>
@@ -55,7 +56,9 @@ function App() {
       <img
         src={chair}
         alt='chair image'
-        className='absolute right-5 top-1 w-1/3'
+        className={`right-5 top-1 w-1/3 ${hideChair?'hidden':'absolute'}`}
+        onMouseEnter={()=>setHideChair(true)}
+        onMouseLeave={()=>setHideChair(false)}
       />
       <div className='min-w-full p-4 py-12 md:p-16 md:px-28 text-[#20404a]'>
         <h2 className='font-bold  text-xl md:text-2xl'>Submit Your Resume</h2>
